@@ -8,7 +8,7 @@ builds:
     flags:
       - -trimpath
     ldflags:
-      - -s -w
+      - -s -w 
       - -X {{ .ModulePath }}/pkg/consts.Version={{ .Version }}
       - -X {{ .ModulePath }}/pkg/consts.Commit={{ .ShortCommit }}
       - -X {{ .ModulePath }}/pkg/consts.CommitDate={{ .CommitDate }}
